@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="466.0" prefWidth="679.0" styleClass="AnchorPane" stylesheets="@css/Style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.proyectobasedatos.VentanaFormularioController">
+   <children>
+      <BorderPane prefHeight="466.0" prefWidth="628.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <AnchorPane prefHeight="466.0" prefWidth="122.0" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox layoutY="31.2" prefHeight="441.6" prefWidth="212.8" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <AnchorPane>
+                           <children>
+                              <Label fx:id="errorNombre" alignment="CENTER" prefHeight="17.6" prefWidth="212.8" text="error Marca" textFill="RED" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                           </children>
+                        </AnchorPane>
+                        <HBox prefHeight="26.4" prefWidth="208.0">
+                           <children>
+                              <Label prefWidth="72.0" text="Nombre">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </Label>
+                              <TextField fx:id="nombre" onKeyReleased="#Teclado" prefHeight="26.0" prefWidth="97.0">
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </TextField>
+                           </children>
+                        </HBox>
+                        <AnchorPane>
+                           <children>
+                              <Label fx:id="errorApellido" alignment="CENTER" prefHeight="17.6" prefWidth="212.8" text="error Modelo" textFill="RED" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                           </children>
+                        </AnchorPane>
+                        <HBox>
+                           <children>
+                              <Label prefWidth="72.0" text="Apellido">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="apellido" onKeyReleased="#Teclado" prefHeight="26.0" prefWidth="97.0">
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </TextField>
+                           </children>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </HBox>
+                        <AnchorPane>
+                           <children>
+                              <Label fx:id="errorTelefono" alignment="CENTER" prefHeight="17.6" prefWidth="212.8" text="error Año" textFill="RED" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                           </children>
+                        </AnchorPane>
+                        <HBox>
+                           <children>
+                              <Label prefWidth="72.0" text="Telefono">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="telefono" onKeyReleased="#Teclado" prefHeight="26.0" prefWidth="97.0">
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </TextField>
+                           </children>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </HBox>
+                        <AnchorPane>
+                           <children>
+                              <Label fx:id="errorCorreo" alignment="CENTER" prefHeight="17.6" prefWidth="212.8" text="error Placa" textFill="RED" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                           </children>
+                        </AnchorPane>
+                        <HBox>
+                           <children>
+                              <Label prefWidth="72.0" text="Correo">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="correo" onKeyReleased="#Teclado" prefHeight="26.0" prefWidth="97.0">
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </TextField>
+                           </children>
+                        </HBox>
+                        <AnchorPane>
+                           <children>
+                              <Label fx:id="errorSeleccion" alignment="CENTER" prefHeight="17.6" prefWidth="212.8" text="errorSeleccion" textFill="RED" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                           </children>
+                        </AnchorPane>
+                        <HBox>
+                           <children>
+                              <Label prefWidth="72.0" text="Auto">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Accordion fx:id="acordion" />
+                              <Label fx:id="seleccion" text="SELECCIONA" />
+                           </children>
+                        </HBox>
+                        <AnchorPane>
+                           <children>
+                              <Label fx:id="errorPrecio" alignment="CENTER" prefHeight="17.6" prefWidth="212.8" text="error Precio" textFill="RED" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                           </children>
+                        </AnchorPane>
+                        <HBox>
+                           <children>
+                              <Label prefWidth="72.0" text="Precio">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="precio" text="\$0" />
+                           </children>
+                        </HBox>
+                        <AnchorPane>
+                           <children>
+                              <Label fx:id="errorKm" alignment="CENTER" prefHeight="17.6" prefWidth="212.8" text="error Km" textFill="RED" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                           </children>
+                        </AnchorPane>
+                        <HBox />
+                        <AnchorPane>
+                           <children>
+                              <Button fx:id="aceptar" alignment="CENTER" mnemonicParsing="false" onAction="#aceptar" prefHeight="36.0" prefWidth="212.8" text="Aceptar" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                           </children>
+                           <VBox.margin>
+                              <Insets left="5.0" right="5.0" top="10.0" />
+                           </VBox.margin>
+                        </AnchorPane>
+                        <AnchorPane>
+                           <VBox.margin>
+                              <Insets left="5.0" right="5.0" top="10.0" />
+                           </VBox.margin>
+                        </AnchorPane>
+                        <AnchorPane>
+                           <VBox.margin>
+                              <Insets left="5.0" right="5.0" top="10.0" />
+                           </VBox.margin>
+                        </AnchorPane>
+                        <AnchorPane>
+                           <VBox.margin>
+                              <Insets left="5.0" right="5.0" top="10.0" />
+                           </VBox.margin>
+                        </AnchorPane>
+                        <Button mnemonicParsing="false" onAction="#regresar" style="-fx-background-color: #008165;" text="Regresar" />
+                        <AnchorPane>
+                           <children>
+                              <Label fx:id="echo" alignment="CENTER" prefHeight="36.0" prefWidth="212.8" text="¡Echo!" textFill="#352f9e" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <font>
+                                    <Font name="System Bold" size="25.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="40.0" />
+                           </VBox.margin>
+                        </AnchorPane>
+                     </children>
+                  </VBox>
+               </children>
+               <BorderPane.margin>
+                  <Insets left="10.0" />
+               </BorderPane.margin>
+            </AnchorPane>
+         </center>
+         <right>
+            <TableView fx:id="tabla" onMouseClicked="#seleccion" prefHeight="466.0" prefWidth="413.0" BorderPane.alignment="CENTER">
+              <columns>
+                <TableColumn fx:id="colMarca" prefWidth="85.60003358125687" text="Marca" />
+                <TableColumn fx:id="colModelo" prefWidth="88.79998779296875" text="Modelo" />
+                  <TableColumn fx:id="colAno" prefWidth="62.4000244140625" text="Año" />
+                  <TableColumn fx:id="colPrecio" prefWidth="102.39997863769531" text="Precio" />
+              </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+            </TableView>
+         </right>
+      </BorderPane>
+   </children>
+</AnchorPane>
